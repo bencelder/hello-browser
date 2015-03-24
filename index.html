@@ -4,7 +4,15 @@
         <title>Tetris</title>
         <script>
             function initialize(){
-                alert("JavaScript Initialized");
+                //alert("JavaScript Initialized");
+
+                // Get the canvas
+                c = document.getElementByID("myCanvas");
+                ctx = c.getContext("2d");
+
+                // draw a box
+                ctx.fillStyle="#F00000";
+                ctx.fillRect(0,0,20,20);
             }
         </script>
     <body onload="initialize();" style="background-color:#EEEEEE">
