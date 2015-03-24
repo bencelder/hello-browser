@@ -69,5 +69,5 @@ function drawBlock(x, y, c){
     ctx.fill();
 }
 function keyDown(e){
-    alert("Keycode: " + e.keyCode);
+    alert("HI! Keycode: " + e.keyCode);
 }
