@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <body style="background-color:#EEEEEE">
+    <head>
+        <title>Tetris</title>
+        <script>
+            function initialize(){
+                alert("JavaScript Initialized");
+            }
+        </script>
+    <body onload="initialize();" style="background-color:#EEEEEE">
         <canvas id="myCanvas" height="400px" width="200px" style="background-color:#444444"></canvas>
         <div id="score" style="width:200px;background-color:#CCCCCC;">
             Score: 0
