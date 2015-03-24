@@ -11,8 +11,22 @@
                 ctx = c.getContext("2d");
 
                 // draw a box
-                ctx.fillStyle="#F00000";
-                ctx.fillRect(0,0,20,20);
+                drawBlock(0, 0);
+                drawBlock(9, 0);
+                drawBlock(0, 19);
+                drawBlock(9, 19);
+            }
+
+            function drawBlock(x, y){
+                // convert to pixel coords
+                pixelX = x*20;
+                pixelY = (19-y)*20;
+
+                // set the fill color
+                ctx.fillStyle="#FF0000";
+
+                // draw the rectangle
+                ctx.fillRect(pixelX, pixelY, 20, 20);
             }
         </script>
     <body onload="initialize();" style="background-color:#EEEEEE">
